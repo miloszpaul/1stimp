@@ -5,7 +5,8 @@ from PIL import Image
 # If using a ML model, import TensorFlow, PyTorch, etc.
 # from tensorflow.keras.models import load_model
 
-# Set up the title and introduction of the app
+# Set up the logo, title and introduction of the app
+st.image("images/logo.png", width=200, caption='MeetPersona')
 st.title('First Impression for Videocalls')
 st.write('This application provides insights into your first impression in videocalls based on the uploaded image.')
 
@@ -36,5 +37,6 @@ else:
 
 # Additional Guidelines (if needed)
 st.subheader('Guidelines')
+st.image("images/background.png", caption='I can help you out', use_column_width=True)
 st.write('Here are some guidelines for selecting appropriate images for analysis...')
 # Add more instructions or use st.image, st.video for additional resources.
