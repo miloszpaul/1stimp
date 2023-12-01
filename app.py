@@ -15,7 +15,7 @@ uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg
 if uploaded_file is not None:
     # Display the uploaded image
     image = Image.open(uploaded_file)
-    st.image(image, caption='Uploaded Image', use_column_width=True)
+    st.image(image, caption='Your Uploaded Image', use_column_width=True)
 
     # Load your trained model (modify this part based on your model)
     # model = load_model('path_to_your_model.h5')
