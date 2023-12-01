@@ -4,8 +4,16 @@ import numpy as np
 import dlib
 import math
 
-def yolo(image):
-    model = YOLO("yolov8n.pt")
+def load_yolo_model():
+    try:
+        return YOLO("yolov8n.pt")  # Loading the YOLOv8 model
+    except Exception as e:
+        print(f"Error loading YOLO model: {e}")
+        return None
+
+def yolo(image, model):
+    if model is None:
+        return {}
     results = model.predict(source=image, save=True, save_txt=True, conf=0.4)
     names = model.names
     objects_detected = {
@@ -96,9 +104,10 @@ def glass_detection(image):
 
 def process_image(user_image_path):
     try:
+        model = load_yolo_model()
         image = cv2.imread(user_image_path)
         results = {
-            "yolo_results": yolo(image),
+            "yolo_results": yolo(image, model),
             "face_info": face_complete_distance_center_light(image),
             "glasses_present": glass_detection(image)
         }
