@@ -16,6 +16,7 @@ dependencies:
   - rich
   - six
   - streamlit
+  - ultralytics
   - pip:
     - dlib
     - opencv-python-headless
