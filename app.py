@@ -2,6 +2,10 @@
 import streamlit as st
 import numpy as np
 from PIL import Image
+
+# Import functions from zoom.py
+from zoom import process_image, yolo, face_complete_distance_center_light, glass_detection
+
 # If using a ML model, import TensorFlow, PyTorch, etc.
 # from tensorflow.keras.models import load_model
 
@@ -17,21 +21,18 @@ if uploaded_file is not None:
     image = Image.open(uploaded_file)
     st.image(image, caption='Your Uploaded Image', use_column_width=True)
 
-    # Load your trained model (modify this part based on your model)
-    # model = load_model('path_to_your_model.h5')
+    # Convert the uploaded file to a format that can be processed by zoom.py
+    # For example, save the image to a temporary file
+    with open("temp_image.jpg", "wb") as f:
+        f.write(uploaded_file.getbuffer())
 
-    # Image Preprocessing Function (modify as per your model's requirement)
-    # def preprocess_image(image, target_size):
-    #     # Example: Resize, scale, etc.
-    #     return processed_image
+    # Call the process_image function from zoom.py
+    process_image("temp_image.jpg")
 
-    # Predict and Display the results
-    # processed_image = preprocess_image(image, target_size=(224, 224))
-    # prediction = model.predict(processed_image)
-    # st.subheader('Analysis Results')
-    # st.write('Based on our analysis...')
-    # Display the interpretation of the prediction
-    # st.write('Confidence: {:.2f}%'.format(prediction[0]*100))
+    # Display results - Modify this part based on how you want to present the results
+    st.subheader('Analysis Results')
+    st.write('Based on our analysis...')
+    # You might want to modify process_image in zoom.py to return results instead of printing them
 else:
     st.warning('Please upload an image.')
 
