@@ -4,6 +4,7 @@ channels:
   - defaults
   - pytorch
 dependencies:
+  - mamba
   - python=3.8
   - dlib
   - altair
