@@ -1,33 +1,38 @@
-name: unified_env
-channels:
-  - conda-forge
-  - defaults
-dependencies:
-  - python=3.9
-  - pip
-  - altair
-  - blinker
-  - cachetools
-  - certifi
-  - charset-normalizer
-  - click
-  - pillow
-  - requests
-  - rich
-  - six
-  - streamlit
-  - pip:
-    - dlib
-    - opencv-python-headless
-    - matplotlib
-    - numpy
-    - pandas
-    - pyyaml
-    - scipy
-    - seaborn
-    - sympy
-    - thop
+  name: unified_env
+  channels:
+    - conda-forge
+    - defaults
+    - pytorch 
+  dependencies:
+    - python=3.8
+    - pip
+    - altair
+    - blinker
+    - cachetools
+    - certifi
+    - charset-normalizer
+    - click
+    - pillow
+    - requests
+    - rich
+    - six
+    - streamlit
     - torch
     - torchvision
-    - tqdm
-    - git+https://github.com/ultralytics/yolov8.git
+    - streamlit
+    - ultralytics
+    - pip:
+      - dlib
+      - opencv-python-headless
+      - matplotlib
+      - numpy
+      - pandas
+      - pyyaml
+      - scipy
+      - seaborn
+      - sympy
+      - thop
+      - torch
+      - torchvision
+      - tqdm
+      - git+https://github.com/ultralytics/yolov8.git
