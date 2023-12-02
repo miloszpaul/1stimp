@@ -4,8 +4,6 @@ channels:
   - defaults
 dependencies:
   - python=3.9
-  - pip
-    - git+https://github.com/ultralytics/yolov8
   - altair
   - blinker
   - cachetools
@@ -31,3 +29,4 @@ dependencies:
     - torch
     - torchvision
     - tqdm
+    - ultralytics
