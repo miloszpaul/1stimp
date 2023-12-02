@@ -16,11 +16,10 @@
     - requests
     - rich
     - six
-    - streamlit
-    - torch
-    - torchvision
-    - streamlit
-    - ultralytics
+    - streamlit==1.25.0
+    - torch==1.10.0
+    - torchvision==0.11.1
+    - ultralytics==8.0.142
     - pip:
       - dlib
       - opencv-python-headless
