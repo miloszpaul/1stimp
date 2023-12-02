@@ -30,4 +30,4 @@ dependencies:
     - torch
     - torchvision
     - tqdm
-    - git+https://github.com/ultralytics/ultralytics.git@main
+    - ultralytics
