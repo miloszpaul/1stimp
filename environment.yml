@@ -4,6 +4,7 @@ channels:
   - defaults
 dependencies:
   - python=3.9
+  - pip
   - altair
   - blinker
   - cachetools
@@ -29,3 +30,4 @@ dependencies:
     - torch
     - torchvision
     - tqdm
+    - git+https://github.com/ultralytics/ultralytics.git@main
