@@ -3,3 +3,4 @@ matplotlib
 ultralytics
 torch
 torchvision
+dlib
