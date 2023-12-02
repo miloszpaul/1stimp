@@ -30,4 +30,4 @@ dependencies:
     - torch
     - torchvision
     - tqdm
-    - ultralytics
+    - git+https://github.com/ultralytics/yolov8.git
