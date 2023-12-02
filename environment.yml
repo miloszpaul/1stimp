@@ -2,7 +2,7 @@ name: unified_env
 channels:
   - conda-forge
   - defaults
-  - pytorch 
+  - pytorch
 dependencies:
   - python=3.8
   - dlib
@@ -28,6 +28,7 @@ dependencies:
   - sympy
   - thop
   - tqdm
+  - pip
   - pip:
-    - opencv-python-headless
-    - matplotlib
+      - opencv-python-headless
+      - matplotlib
