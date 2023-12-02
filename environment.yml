@@ -1,8 +1,6 @@
 name: unified_env
 channels:
   - conda-forge
-  - defaults
-  - pytorch
 dependencies:
   - mamba
   - python=3.8
@@ -17,17 +15,15 @@ dependencies:
   - requests
   - rich
   - six
-  - streamlit=1.28.2
-  - torch=1.10.0
-  - torchvision=0.11.1
-  - ultralytics=8.0.142
+  - streamlit
+  - torch
+  - torchvision
   - numpy
   - pandas
   - pyyaml
   - scipy
   - seaborn
   - sympy
-  - thop
   - tqdm
   - pip
   - pip:
