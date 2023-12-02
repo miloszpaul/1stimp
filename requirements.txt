@@ -10,6 +10,7 @@ click==8.1.7
 comm==0.2.0
 debugpy==1.8.0
 decorator==5.1.1
+dlib
 exceptiongroup==1.2.0
 executing==2.0.1
 gitdb==4.0.11

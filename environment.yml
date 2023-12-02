@@ -4,6 +4,7 @@
     - defaults
     - pytorch 
   dependencies:
+    - dlib
     - python=3.8
     - pip
     - altair
