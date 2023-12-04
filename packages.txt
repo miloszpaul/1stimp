@@ -5,3 +5,7 @@ libgl1-mesa-glx
 libx11-dev
 libopenblas-dev
 liblapack-dev
+
+libgl1
+freeglut3-dev
+libgtk2.0-dev
