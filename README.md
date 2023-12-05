@@ -1,5 +1,9 @@
+
 # Ai Mirror
 This app analyses your visual first impression for sample images that simulate a videocall situation. 
+
+![mirror picture](https://github.com/maryamasadm/AIMirror/main/0029.jpg)
+*Caption: Look at AL Mirror ! *
 
 ## Online App 
 
